@@ -36,7 +36,6 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^8.17.1",
     "react-app-rewired": "^2.2.1"
   }
 }

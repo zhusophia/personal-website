@@ -1,7 +1,9 @@
-const paths = require('react-scripts/config/paths')
-const path = require('path')
-
-// Make the "app" folder be treated as the "src" folder
-paths.appSrc = path.resolve(__dirname, 'docs')
-// Tell the app that "src/index.js" has moved to "app/index.js"
-paths.appIndexJs = path.resolve(__dirname, 'docs/index.js')
+const path = require('path');
+module.exports = {
+    paths: function (paths, env) {
+        // Changing public to static
+        paths.appPublic = path.resolve(__dirname, 'docs');
+        paths.appHtml = path.resolve(__dirname, 'docs/index.html');
+        return paths;
+    }
+}
